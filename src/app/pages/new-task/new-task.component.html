@@ -1,0 +1,15 @@
+<div class="center-content">
+    <div class="modal-box">
+        <h1 class="title">
+            Ajouter une nouvelle tâche
+        </h1>
+
+
+        <input #taskTitleInput class="input is-primary has-background-light" type="text" placeholder="Quel nom souhaitez-vous donner ?">
+
+        <div class="buttons is-right">
+            <button class="button" routerLink="/" >Annuler</button>
+            <button class="button is-medium is-primary has-text-white" (click)="createTask(taskTitleInput.value)">Créer</button>
+        </div>
+    </div>
+</div>
