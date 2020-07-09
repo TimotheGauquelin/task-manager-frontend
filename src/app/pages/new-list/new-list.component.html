@@ -1,0 +1,18 @@
+<div class="center-content">
+    <div class="modal-box">
+        <h1 class="title">
+            Ajouter une nouvelle liste
+        </h1>
+
+        <div class="field is-grouped">
+            <div class="control is-expanded">
+                <input #listTitleInput class="input is-primary has-background-light" type="text" placeholder="Quel nom souhaitez-vous donner ?">
+            </div>
+        </div>
+
+        <div class="buttons is-right">
+            <button class="button" routerLink="/" >Annuler</button>
+            <button class="button is-medium is-primary has-text-white" (click)="createList(listTitleInput.value)">Créer</button>
+        </div>
+    </div>
+</div>
